@@ -1,4 +1,5 @@
-<include a CircleCI status badge, here>
+### Circle CI Badge
+[![CircleCI](https://circleci.com/gh/circleci/DevOps_Microservices.svg?style=svg)](https://circleci.com/gh/circleci/DevOps_Microservices.svg?style=svg)
 
 ## Project Overview
 
@@ -40,9 +41,6 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
-
-### Circle CI Badge
-[!CircleCI](https://circleci.com/gh/circleci/DevOps_Microservices.svg?style=svg)](https://circleci.com/gh/circleci/DevOps_Microservices.svg?style=svg)
 
 ### Repository Explanation
 Our project is stored in the folder project-ml-microservice-kubernetes/ and we are going to give some details about its content:
