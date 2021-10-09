@@ -18,7 +18,7 @@ install:
 install-hadolint:
 	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.17.5/hadolint-Linux-x86_64
 	chmod +x /bin/hadolint
-	
+
 test:
 	# Additional, optional, tests could go here
 	#python -m pytest -vv --cov=myrepolib tests/*.py
@@ -30,6 +30,6 @@ lint:
 	hadolint Dockerfile
 	# This is a linter for Python source code linter: https://www.pylint.org/
 	# This should be run from inside a virtualenv
-	pylint --disable=R,C,W1203 app.py
+	pylint --disable=R,C,W1202 app.py
 
 all: install lint test
