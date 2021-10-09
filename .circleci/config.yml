@@ -20,20 +20,23 @@ jobs:
       - run:
           name: install python dependencies
           command: |
+              cd ./project-ml-microservice-kubernetes
               make setup
-              source ~/.devops/bin/activate
+              source .devops/bin/activate
               make install
       - save_cache:
           key: v1-pip-deps-{{ checksum "./project-ml-microservice-kubernetes/requirements.txt" }}
           paths:
-              - ~/.devops
+              - .devops
       - run:
             name: Install hadolint
             command: |
+                cd ./project-ml-microservice-kubernetes
                 sudo make install-hadolint
       - run:
             name: Run Lint
             command: |
+                cd ./project-ml-microservice-kubernetes
                 source ~/.devops/bin/activate
                 make lint
 
