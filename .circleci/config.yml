@@ -32,7 +32,7 @@ jobs:
             name: Install hadolint
             command: |
                 cd ./project-ml-microservice-kubernetes
-                sudo make install-hadolint
+                make install-hadolint
       - run:
             name: Run Lint
             command: |
