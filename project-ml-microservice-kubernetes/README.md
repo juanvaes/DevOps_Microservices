@@ -47,17 +47,17 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 ### Repository Explanation
 Our project is stored in the folder project-ml-microservice-kubernetes/ and we are going to give some details about its content:
 
-- app.py: It is a Flask application that provides an endpoint for making predictions.
-- requirements.txt: Dependencies file from the Flask API.
-- model_data/: Is the folder that stores the prediction ML model.
-- output_txt_files/: A folder containing some text files that stores logs from the current project. It's intended to save docker and kubernet logs.
-- .circleci and .circleci/config.yml: Continuos Integration folder for the repository. 
-- Dockerfile: File that allow us to create an image of the project and then run containers of it.
-- Makefile: Allow us to store commands that we can run quickly on the terminal.
-- make_prediction.sh: Makes a curl request to the deployed application
-- run_docker.sh: Build and run the application container
-- run_kubernetes.sh: Build kubernetes pods
-- upload_docker.sh: Upload docker container into dockerhub
+- `app.py:` It is a Flask application that provides an endpoint for making predictions.
+- `requirements.txt:` Dependencies file from the Flask API.
+- `model_data/:` Is the folder that stores the prediction ML model.
+- `output_txt_files/:` A folder containing some text files that stores logs from the current project. It's intended to save docker and kubernet logs.
+- `.circleci and .circleci/config.yml:` Continuos Integration folder for the repository. 
+- `Dockerfile:` File that allow us to create an image of the project and then run containers of it.
+- `Makefile:` Allow us to store commands that we can run quickly on the terminal.
+- `make_prediction.sh:` Makes a curl request to the deployed application
+- `run_docker.sh:` Build and run the application container
+- `run_kubernetes.sh:` Build kubernetes pods
+- `upload_docker.sh:` Upload docker container into dockerhub
 
 ## How to run application
 Go to the `project-ml-microservice-kubernetes/` folder by executing: 
