@@ -4,11 +4,6 @@
 #
 version: 2
 
-workflows:
-  test_build:
-    jobs:
-      - build
-
 jobs:
   build:
     docker:
@@ -41,3 +36,9 @@ jobs:
         command: |
                   . venv/bin/activate
                   make lint
+
+
+workflows:
+  default:
+    jobs:
+      - build
